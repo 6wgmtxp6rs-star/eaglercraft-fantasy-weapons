@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="daggerBlade" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ecf7ff"/>
+      <stop offset="100%" stop-color="#7995b0"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(32 32)">
+    <path d="M0,-24 L6,-24 L10,12 L0,18 L-10,12 Z" fill="url(#daggerBlade)"/>
+    <path d="M-2,-26 L2,-26 L4,-32 L-4,-32 Z" fill="#d7c38e"/>
+    <path d="M-8,12 L8,12 L12,18 L-12,18 Z" fill="#564b3f"/>
+    <path d="M-5,18 L5,18 L6,24 L-6,24 Z" fill="#d5b079"/>
+    <path d="M-2,24 L2,24 L3,30 L-3,30 Z" fill="#8f6f41"/>
+    <path d="M-1,-10 L1,-10 L2,4 L-2,4 Z" fill="#5fe3ff" opacity="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="blade" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f4f9ff"/>
+      <stop offset="50%" stop-color="#dfeaf9"/>
+      <stop offset="100%" stop-color="#9eb7d9"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d9e2ee"/>
+      <stop offset="100%" stop-color="#7c8ea5"/>
+    </linearGradient>
+    <linearGradient id="gem" x1="0" x2="1">
+      <stop offset="0%" stop-color="#70f3ff"/>
+      <stop offset="100%" stop-color="#2a9ad6"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(32 32)">
+    <path d="M0,-26 L6,-26 L10,18 L2,18 Z" fill="url(#blade)" opacity="0.95"/>
+    <path d="M0,-28 L2,-28 L5,16 L-3,16 Z" fill="url(#metal)"/>
+    <path d="M-4,-12 L10,-12 L8,6 L-1,6 Z" fill="#c5d7f2" opacity="0.7"/>
+    <path d="M-3,-26 L0,-30 L3,-26 Z" fill="#dfe7f5"/>
+    <path d="M-10,8 L10,8 L14,12 L-14,12 Z" fill="#645d4d"/>
+    <path d="M-7,12 L7,12 L9,16 L-9,16 Z" fill="#d1b37d"/>
+    <path d="M-4,16 L4,16 L6,20 L-6,20 Z" fill="#8f7149"/>
+    <path d="M-2,20 L2,20 L3,24 L-3,24 Z" fill="#c7a86f"/>
+    <path d="M-2,-18 L2,-18 L4,-4 L-4,-4 Z" fill="url(#gem)" opacity="0.8"/>
+    <path d="M-10,8 L-16,4 L-12,-2 L-6,2 Z" fill="#8a96a8"/>
+    <path d="M10,8 L16,4 L12,-2 L6,2 Z" fill="#8a96a8"/>
+  </g>
+</svg>

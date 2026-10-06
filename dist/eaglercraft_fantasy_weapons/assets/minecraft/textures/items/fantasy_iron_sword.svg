@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+import json
+import os
+from pathlib import Path
+
+from cairosvg import svg2png
+
+ROOT = Path(__file__).resolve().parent.parent
+DIST = ROOT / "dist" / "eaglercraft_fantasy_weapons"
+TEXTURES = DIST / "assets" / "minecraft" / "textures" / "items"
+MODELS = DIST / "assets" / "minecraft" / "models" / "item"
+LANG = DIST / "assets" / "minecraft" / "lang"
+
+SVG_TEXTURES = {
+    "fantasy_iron_sword": "fantasy_iron_sword.svg",
+    "fantasy_iron_axe": "fantasy_iron_axe.svg",
+    "fantasy_iron_spear": "fantasy_iron_spear.svg",
+    "fantasy_iron_dagger": "fantasy_iron_dagger.svg",
+    "fantasy_wooden_staff": "fantasy_wooden_staff.svg",
+    "fantasy_elven_bow": "fantasy_elven_bow.svg",
+}
+
+
+def ensure_directories():
+    for path in [TEXTURES, MODELS, LANG]:
+        path.mkdir(parents=True, exist_ok=True)
+
+
+def write_pack_meta():
+    meta = {
+        "pack": {
+            "pack_format": 1,
+            "description": "Fantasy 3D Weapons Pack for Eaglercraft"
+        }
+    }
+    (DIST / "pack.mcmeta").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
+
+
+def write_lang():
+    lines = [
+        "item.fantasy_iron_sword.name=Rune Sword",
+        "item.fantasy_iron_axe.name=Iron Fang Axe",
+        "item.fantasy_iron_spear.name=Frost Spear",
+        "item.fantasy_iron_dagger.name=Shadow Dagger",
+        "item.fantasy_wooden_staff.name=Elder Staff",
+        "item.fantasy_elven_bow.name=Elven Bow",
+    ]
+    (LANG / "en_us.lang").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def generate_model(name, texture_name, parent="item/handheld"):
+    model = {
+        "parent": parent,
+        "textures": {
+            "layer0": f"items/{texture_name}"
+        }
+    }
+    (MODELS / f"{name}.json").write_text(json.dumps(model, indent=2) + "\n", encoding="utf-8")
+
+
+def export_svg_to_png():
+    for texture_name, svg_filename in SVG_TEXTURES.items():
+        svg_path = ROOT / "dist" / "eaglercraft_fantasy_weapons" / "assets" / "minecraft" / "textures" / "items" / svg_filename
+        png_path = TEXTURES / f"{texture_name}.png"
+        if svg_path.exists():
+            svg2png(url=str(svg_path), write_to=str(png_path), output_width=64, output_height=64)
+
+
+def main():
+    ensure_directories()
+    write_pack_meta()
+    write_lang()
+
+    generate_model("diamond_sword", "fantasy_iron_sword", "item/handheld")
+    generate_model("iron_sword", "fantasy_iron_sword", "item/handheld")
+    generate_model("golden_sword", "fantasy_iron_sword", "item/handheld")
+    generate_model("wooden_sword", "fantasy_iron_sword", "item/handheld")
+
+    generate_model("diamond_axe", "fantasy_iron_axe", "item/handheld")
+    generate_model("iron_axe", "fantasy_iron_axe", "item/handheld")
+
+    generate_model("bow", "fantasy_elven_bow", "item/bow")
+
+    # standard Eaglercraft resource pack path plus item path copies
+    for model_name in ["diamond_sword", "iron_sword", "golden_sword", "wooden_sword", "diamond_axe", "iron_axe", "bow"]:
+        src = MODELS / f"{model_name}.json"
+        dst = MODELS / f"{model_name}_copy.json"
+        dst.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+
+    export_svg_to_png()
+    print("Fantasy pack generated at:", DIST)
+
+
+if __name__ == "__main__":
+    main()

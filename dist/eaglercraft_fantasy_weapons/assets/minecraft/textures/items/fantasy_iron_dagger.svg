@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="spearMetal" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ebf3ff"/>
+      <stop offset="100%" stop-color="#6e8ba9"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(32 32)">
+    <path d="M0,-30 L4,-30 L8,12 L-8,12 Z" fill="url(#spearMetal)"/>
+    <path d="M-2,-30 L2,-30 L7,-18 L-7,-18 Z" fill="#d9e6f6"/>
+    <path d="M-3,-32 L3,-32 L7,-42 L-7,-42 Z" fill="#d9e5f6"/>
+    <path d="M-9,12 L9,12 L13,18 L-13,18 Z" fill="#5c4c3f"/>
+    <path d="M-6,18 L6,18 L8,22 L-8,22 Z" fill="#d0ae74"/>
+    <path d="M-4,22 L4,22 L5,30 L-5,30 Z" fill="#957751"/>
+    <path d="M-2,-10 L2,-10 L4,0 L-4,0 Z" fill="#64d8ff" opacity="0.8"/>
+    <path d="M-10,0 L10,0 L12,4 L-12,4 Z" fill="#9bb3ca" opacity="0.8"/>
+  </g>
+</svg>

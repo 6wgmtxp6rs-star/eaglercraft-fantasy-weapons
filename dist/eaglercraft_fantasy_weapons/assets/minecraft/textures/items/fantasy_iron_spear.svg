@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="axeHead" x1="0" x2="1">
+      <stop offset="0%" stop-color="#dfe9f6"/>
+      <stop offset="100%" stop-color="#7187a0"/>
+    </linearGradient>
+    <linearGradient id="bladeGlow" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d7f5ff"/>
+      <stop offset="100%" stop-color="#1f7db7"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(32 32)">
+    <path d="M-12,-22 L12,-22 L17,-4 L2,14 L-2,14 L-17,-4 Z" fill="url(#axeHead)"/>
+    <path d="M-9,-18 L9,-18 L12,-6 L0,10 L-12,-6 Z" fill="#b7c7da" opacity="0.7"/>
+    <path d="M-1,-2 L8,-2 L4,10 L-4,10 Z" fill="url(#bladeGlow)" opacity="0.9"/>
+    <path d="M-3,-22 L3,-22 L5,-26 L-5,-26 Z" fill="#d9c084"/>
+    <path d="M-12,14 L12,14 L10,18 L-10,18 Z" fill="#655843"/>
+    <path d="M-5,18 L5,18 L7,22 L-7,22 Z" fill="#d5b27c"/>
+    <path d="M-3,22 L3,22 L4,28 L-4,28 Z" fill="#8d6a3a"/>
+    <path d="M-10,-8 L10,-8 L9,-14 L-9,-14 Z" fill="#91a7c2" opacity="0.8"/>
+  </g>
+</svg>
