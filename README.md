@@ -1,13 +1,8 @@
-# Fantasy Weapons Pack for Eaglercraft
+# Epic Fantasy Weapons Pack for Eaglercraft
 
-A stylized fantasy 3D weapons resource pack built for Eaglercraft-style resource pack loading. This repo includes:
+A refined fantasy weapons resource pack for Eaglercraft with stronger silhouette detail, rune-inspired metals, and magical accents. This version focuses on a darker, more premium fantasy look while staying lightweight and easy to customize.
 
-- A resource pack layout compatible with Eaglercraft-style packs
-- Fantasy sword, axe, spear, dagger, staff, and bow texture sources in SVG
-- JSON model overrides for common vanilla weapons
-- A quick import guide and optional export workflow
-
-## Included weapon sets
+## Included weapon styles
 
 - Rune Sword
 - Iron Fang Axe
@@ -15,8 +10,9 @@ A stylized fantasy 3D weapons resource pack built for Eaglercraft-style resource
 - Shadow Dagger
 - Elder Staff
 - Elven Bow
+- Celestial Blade (bonus variant)
 
-## Structure
+## Pack layout
 
 ```text
 .
@@ -47,29 +43,30 @@ A stylized fantasy 3D weapons resource pack built for Eaglercraft-style resource
 │                       ├── fantasy_iron_spear.svg
 │                       ├── fantasy_iron_dagger.svg
 │                       ├── fantasy_wooden_staff.svg
-│                       └── fantasy_elven_bow.svg
+│                       ├── fantasy_elven_bow.svg
+│                       └── fantasy_celestial_blade.svg
 ```
 
 ## Installation
 
-1. Open the generated `dist/eaglercraft_fantasy_weapons` folder.
+1. Open the generated `dist/eaglercraft_fantasy_weapons` directory.
 2. Zip it as a resource pack archive.
-3. Load the zip in Eaglercraft or extract it into your Eaglercraft resource pack folder.
-4. If your client requires PNG textures, run the export script to convert the SVG texture sources to PNG.
-
-## Export PNGs
+3. Load the zip in Eaglercraft or extract it into your Eaglercraft resource-pack folder.
+4. If your client requires PNG textures, run the export script:
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 python scripts/export_pngs.py
 ```
 
-This script converts the SVG weapon sources into PNGs inside the generated resource pack.
+## Export workflow
+
+The script converts all SVG weapon textures in the pack into PNG files that are easier to load in various Eaglercraft setups.
 
 ## Notes
 
-This is a fantasy-style weapon pack intended to feel like a lightweight custom 3D item set. Eaglercraft support varies by browser/client version, so the pack is designed to be easy to tweak if you want to adjust blade silhouettes, gem accents, or color themes.
+This is a stylized, Eaglercraft-friendly fantasy weapon pack intended for easy visual tweaking. The pack is designed to be lightweight, so it can be adjusted quickly for different fantasy themes like arcane, undead, rune, or dragon-hunter aesthetics.
 
 ## License
 
-This project is shared as a creative resource pack template for personal and modded game use.
+Creative use only. Feel free to adapt the pack for personal or community Minecraft content.

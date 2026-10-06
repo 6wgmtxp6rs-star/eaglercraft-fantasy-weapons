@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="blade" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="50%" stop-color="#d5eaff"/>
+      <stop offset="100%" stop-color="#8fb3d2"/>
+    </linearGradient>
+    <linearGradient id="rune" x1="0" x2="1">
+      <stop offset="0%" stop-color="#7df3ff"/>
+      <stop offset="100%" stop-color="#3c8cc9"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(32 32)">
+    <path d="M-3,-28 L3,-28 L9,18 L-9,18 Z" fill="url(#blade)"/>
+    <path d="M-1,-34 L1,-34 L5,-20 L-5,-20 Z" fill="#d5d8e5"/>
+    <path d="M-9,18 L9,18 L12,24 L-12,24 Z" fill="#5d463c"/>
+    <path d="M-6,24 L6,24 L8,28 L-8,28 Z" fill="#d5b889"/>
+    <path d="M-3,28 L3,28 L4,34 L-4,34 Z" fill="#9a744f"/>
+    <path d="M-2,-10 L2,-10 L3,2 L-3,2 Z" fill="url(#rune)" opacity="0.9"/>
+    <path d="M-12,4 L12,4 L16,10 L-16,10 Z" fill="#a2afbd" opacity="0.85"/>
+  </g>
+</svg>
