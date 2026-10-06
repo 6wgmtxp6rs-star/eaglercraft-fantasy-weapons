@@ -12,6 +12,27 @@ A refined fantasy weapons resource pack for Eaglercraft with stronger silhouette
 - Elven Bow
 - Celestial Blade (bonus variant)
 
+## Weapon-to-tool best fit
+
+These are the best matching archetypes for each weapon in a fantasy Eaglercraft setup:
+
+- Rune Sword → Sword / Main melee weapon
+- Iron Fang Axe → Axe / Heavy melee breaker
+- Frost Spear → Spear / Polearm / Reach weapon
+- Shadow Dagger → Dagger / Knife / Rogue weapon
+- Elder Staff → Staff / Magic focus / Arcane caster
+- Elven Bow → Bow / Ranged weapon
+- Celestial Blade → Legendary sword / Endgame magic blade
+- Reaper Scythe → Scythe / Death-themed cleaver
+- Thunder Mace → Hammer / Crush weapon
+- Orbit Chakram → Chakram / Throwing / Agile finisher
+
+### Recommended grouping
+
+- Melee core: Sword, Axe, Spear, Dagger, Hammer, Scythe
+- Ranged: Bow, Chakram
+- Magic/support: Staff, Celestial Blade
+
 ## Pack layout
 
 ```text
@@ -20,6 +41,7 @@ A refined fantasy weapons resource pack for Eaglercraft with stronger silhouette
 ├── requirements.txt
 ├── scripts/
 │   └── export_pngs.py
+├── weapon_tool_mapping.json
 ├── dist/
 │   └── eaglercraft_fantasy_weapons/
 │       ├── pack.mcmeta
@@ -44,7 +66,8 @@ A refined fantasy weapons resource pack for Eaglercraft with stronger silhouette
 │                       ├── fantasy_iron_dagger.svg
 │                       ├── fantasy_wooden_staff.svg
 │                       ├── fantasy_elven_bow.svg
-│                       └── fantasy_celestial_blade.svg
+│                       ├── fantasy_celestial_blade.svg
+│                       └── fantasy_reaper_scythe.svg
 ```
 
 ## Installation

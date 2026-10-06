@@ -1,0 +1,19 @@
+{
+  "weapon_to_tool": [
+    {"weapon": "Rune Sword", "best_tool": "Sword", "role": "Main melee weapon", "category": "melee"},
+    {"weapon": "Iron Fang Axe", "best_tool": "Axe", "role": "Heavy melee breaker", "category": "melee"},
+    {"weapon": "Frost Spear", "best_tool": "Spear", "role": "Reach weapon", "category": "melee"},
+    {"weapon": "Shadow Dagger", "best_tool": "Dagger", "role": "Rogue / quick melee", "category": "melee"},
+    {"weapon": "Elder Staff", "best_tool": "Staff", "role": "Arcane caster", "category": "magic"},
+    {"weapon": "Elven Bow", "best_tool": "Bow", "role": "Ranged weapon", "category": "ranged"},
+    {"weapon": "Celestial Blade", "best_tool": "Legendary Sword", "role": "Endgame magic blade", "category": "magic"},
+    {"weapon": "Reaper Scythe", "best_tool": "Scythe", "role": "Death-themed cleaver", "category": "melee"},
+    {"weapon": "Thunder Mace", "best_tool": "Hammer", "role": "Crush weapon", "category": "melee"},
+    {"weapon": "Orbit Chakram", "best_tool": "Chakram", "role": "Agile finisher", "category": "ranged"}
+  ],
+  "recommended_groups": {
+    "melee_core": ["Rune Sword", "Iron Fang Axe", "Frost Spear", "Shadow Dagger", "Reaper Scythe", "Thunder Mace"],
+    "ranged": ["Elven Bow", "Orbit Chakram"],
+    "magic_support": ["Elder Staff", "Celestial Blade"]
+  }
+}
