@@ -1,95 +1,50 @@
-# Epic Fantasy Weapons Pack for Eaglercraft
+# Fantasy Weapon Pack for Eaglercraft
 
-A refined fantasy weapons resource pack for Eaglercraft with stronger silhouette detail, rune-inspired metals, and magical accents. This version focuses on a darker, more premium fantasy look while staying lightweight and easy to customize.
+A final fantasy-inspired weapon resource pack that matches each weapon to the best tool slot and role in Eaglercraft style gameplay.
 
-## Included weapon styles
+## Final weapon list and tool fit
 
+- Rune Sword → Sword
+- Iron Fang Axe → Axe
+- Frost Spear → Spear / Polearm
+- Shadow Dagger → Dagger / Knife
+- Elder Staff → Staff / Magic Focus
+- Elven Bow → Bow
+- Celestial Blade → Legendary Sword / Magic Blade
+- Reaper Scythe → Scythe
+- Thunder Mace → Hammer / Mace
+- Orbit Chakram → Chakram / Throwing Weapon
+
+## Grouping
+
+### Melee core
 - Rune Sword
 - Iron Fang Axe
 - Frost Spear
 - Shadow Dagger
-- Elder Staff
+- Reaper Scythe
+- Thunder Mace
+
+### Ranged
 - Elven Bow
-- Celestial Blade (bonus variant)
+- Orbit Chakram
 
-## Weapon-to-tool best fit
+### Magic/support
+- Elder Staff
+- Celestial Blade
 
-These are the best matching archetypes for each weapon in a fantasy Eaglercraft setup:
+## Files included
 
-- Rune Sword → Sword / Main melee weapon
-- Iron Fang Axe → Axe / Heavy melee breaker
-- Frost Spear → Spear / Polearm / Reach weapon
-- Shadow Dagger → Dagger / Knife / Rogue weapon
-- Elder Staff → Staff / Magic focus / Arcane caster
-- Elven Bow → Bow / Ranged weapon
-- Celestial Blade → Legendary sword / Endgame magic blade
-- Reaper Scythe → Scythe / Death-themed cleaver
-- Thunder Mace → Hammer / Crush weapon
-- Orbit Chakram → Chakram / Throwing / Agile finisher
+- `weapon_tool_mapping.json`
+- `scripts/export_pngs.py`
+- `dist/eaglercraft_fantasy_weapons/assets/minecraft/models/item/*.json`
+- `dist/eaglercraft_fantasy_weapons/assets/minecraft/textures/items/*.svg`
 
-### Recommended grouping
-
-- Melee core: Sword, Axe, Spear, Dagger, Hammer, Scythe
-- Ranged: Bow, Chakram
-- Magic/support: Staff, Celestial Blade
-
-## Pack layout
-
-```text
-.
-├── README.md
-├── requirements.txt
-├── scripts/
-│   └── export_pngs.py
-├── weapon_tool_mapping.json
-├── dist/
-│   └── eaglercraft_fantasy_weapons/
-│       ├── pack.mcmeta
-│       └── assets/
-│           └── minecraft/
-│               ├── lang/
-│               │   └── en_us.lang
-│               ├── models/
-│               │   └── item/
-│               │       ├── diamond_sword.json
-│               │       ├── iron_sword.json
-│               │       ├── golden_sword.json
-│               │       ├── diamond_axe.json
-│               │       ├── iron_axe.json
-│               │       ├── bow.json
-│               │       └── ...
-│               └── textures/
-│                   └── items/
-│                       ├── fantasy_iron_sword.svg
-│                       ├── fantasy_iron_axe.svg
-│                       ├── fantasy_iron_spear.svg
-│                       ├── fantasy_iron_dagger.svg
-│                       ├── fantasy_wooden_staff.svg
-│                       ├── fantasy_elven_bow.svg
-│                       ├── fantasy_celestial_blade.svg
-│                       └── fantasy_reaper_scythe.svg
-```
-
-## Installation
-
-1. Open the generated `dist/eaglercraft_fantasy_weapons` directory.
-2. Zip it as a resource pack archive.
-3. Load the zip in Eaglercraft or extract it into your Eaglercraft resource-pack folder.
-4. If your client requires PNG textures, run the export script:
+## Setup
 
 ```bash
 python -m pip install -r requirements.txt
 python scripts/export_pngs.py
 ```
 
-## Export workflow
-
-The script converts all SVG weapon textures in the pack into PNG files that are easier to load in various Eaglercraft setups.
-
-## Notes
-
-This is a stylized, Eaglercraft-friendly fantasy weapon pack intended for easy visual tweaking. The pack is designed to be lightweight, so it can be adjusted quickly for different fantasy themes like arcane, undead, rune, or dragon-hunter aesthetics.
-
-## License
-
-Creative use only. Feel free to adapt the pack for personal or community Minecraft content.
+Then zip the `dist/eaglercraft_fantasy_weapons` folder as a resource pack and load it in Eaglercraft.
