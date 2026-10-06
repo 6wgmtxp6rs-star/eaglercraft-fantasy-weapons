@@ -1,13 +1,6 @@
 {
   "parent": "item/bow",
   "textures": {
-    "layer0": "item/bow"
-  },
-  "display": {
-    "thirdperson_righthand": {
-      "rotation": [ -80, 260, -60 ],
-      "translation": [ -2, -2, -10 ],
-      "scale": [ 0.9, 0.9, 0.9 ]
-    }
+    "layer0": "items/fantasy_elven_bow"
   }
 }

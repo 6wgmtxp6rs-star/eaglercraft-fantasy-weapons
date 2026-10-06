@@ -1,13 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "item/diamond_axe"
-  },
-  "display": {
-    "thirdperson_righthand": {
-      "rotation": [ -90, 0, 0 ],
-      "translation": [ 0, -3, -5 ],
-      "scale": [ 0.9, 0.9, 0.9 ]
-    }
+    "layer0": "items/fantasy_iron_axe"
   }
 }
